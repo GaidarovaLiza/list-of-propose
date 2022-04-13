@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import data from './data.json';
+
+const item=data;
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App item={item}/>
   </React.StrictMode>,
   document.getElementById('root')
 );
